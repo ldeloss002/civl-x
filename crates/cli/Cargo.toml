@@ -1,0 +1,17 @@
+[package]
+default-run = "civlx-cli"
+name = "civlx-cli"
+
+edition.workspace = true
+version.workspace = true
+
+[features]
+default = ["smalltalk"]
+
+smalltalk = ["civlx-lang/smalltalk"]
+
+[dependencies]
+civlx-lang = { path = "../lang" }
+civlx-solver = { path = "../solver" }
+
+ariadne = "0.4.0"

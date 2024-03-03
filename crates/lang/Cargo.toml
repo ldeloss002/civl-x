@@ -1,0 +1,19 @@
+
+
+[package]
+name = "civlx-lang"
+
+edition.workspace = true
+version.workspace = true
+
+[features]
+default = ["smalltalk"]
+
+smalltalk = []
+
+[dependencies]
+# chumsky = { version = "1.0.0-alpha.6", features = ["label"] }
+chumsky = { git = "https://github.com/zesterer/chumsky.git", features = [
+  "label",
+] }
+fraction = "0.15.1"

@@ -1,0 +1,13 @@
+[package]
+name = "civlx-solver"
+
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+z3 = { version = "0.12.1", features = ["arbitrary-size-numeral"] }
+# z3 = { version = "0.12.1", features = ["static-link-z3"] }
+
+env_logger = "*"
+log = "*"
+num = "*"
